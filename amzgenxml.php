@@ -1,8 +1,8 @@
 <?php
 $dbhost = "localhost";
-$dbname = "pan2";
+$dbname = "";
 $dbuser = "root";
-$dbpass = "upCDqaQHCXK9F8HT";
+$dbpass = "";
 $charset = "utf-8";
 $FechaActual = date('Y-m-d');
 $profiles = "profiles=\"amz\" ";

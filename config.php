@@ -8,8 +8,8 @@
 	// -- mysql server configuration
 	$G_mysql_servername = "localhost";
 	$G_mysql_username = "root";
-	$G_mysql_password = "upCDqaQHCXK9F8HT";
-	$G_mysql_dbname = "pan2";
+	$G_mysql_password = "";
+	$G_mysql_dbname = "";
 	
 	// -- interface options
 	$G_reselled_accounts_per_page = 80;
@@ -17,7 +17,7 @@
 	// -- fslb configuration
 	$G_fslb_server = "localhost";
 	
-	$G_fslb_server_display = "fenix61.ddns.net";
+	$G_fslb_server_display = ".net";
 	$G_fslb_client_port = 20000;
 	$G_fslb_client_des_key = "0102030405060708091011121314";
 	$G_fslb_client_show_server_url = false;
