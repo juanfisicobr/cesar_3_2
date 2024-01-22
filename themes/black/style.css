@@ -1,0 +1,431 @@
+html
+{
+	overflow-y: scroll;
+}
+
+body
+{
+	background-image: url("./backdrop.png");
+	background-repeat: repeat-x;
+	background-color: #b0f51b;
+}
+
+body, p, td
+{
+	font-family: Verdana, Helvetica, sans-serif;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+}
+
+hr
+{
+	color: #8b2adb;
+	background-color: #8b2adb;
+	height: 5px;
+	border: none;
+	margin: 8px;
+}
+
+a:hover
+{
+	color: #ff031c;
+	text-decoration: none;
+	font-weight: bold;	
+}
+
+a
+{
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition:    all 0.1s ease-in-out;
+	-ms-transition:     all 0.1s ease-in-out;
+	-o-transition:      all 0.1s ease-in-out;
+	transition:         all 0.1s ease-in-out;
+}
+
+.menuLink
+{
+	font-size: 9px;
+	font-weight: bold;
+	color: #8b2adb;
+}
+
+.categoryTitle
+{
+	font-size: 35px;
+	color: #000;
+}
+
+.sectionTitle
+{
+	border-bottom-style: solid; 
+	border-bottom-width: 1px;
+	font-size: 19px!important;
+	font-weight: bold;
+	color: gray;
+}
+
+.fieldTitle,
+td img
+{
+	vertical-align: middle;
+	font-weight: bold;
+}
+
+.mainArea
+{
+	/*border-left-style: dotted;
+	border-left-width: 1px;
+	border-right-style: dotted;
+	border-right-width: 1px;
+	border-top-width: 0;
+	border-bottom-width: 0;
+    border-color: #8b2adb;*/
+	padding-left: 4px;
+	padding-right: 4px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	width: 1140px
+}
+
+.subtleBackground
+{
+	/*background: #eeeeee;*/
+      
+}
+
+.infoBar
+{
+	background: #8b2adb;
+	color: white;
+	padding: 5px 6px;
+	width: 1118px
+}
+
+.infoBar td {
+	font-size: 14px!important;
+}
+
+.listHeader
+{
+	background: #b971f5;
+	color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.listHeader td {
+	border-left: 1px solid #fff;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 12px 15px;
+}
+
+.listBackground
+{
+	background: #f7f6f6;
+	border-spacing: 0;
+}
+
+.pagingBackground
+{
+	background: gainsboro;
+}
+
+.errorMessage
+{
+	color: brown;
+}
+
+#tblHeader select,
+.pagingBackground td input,
+.pagingBackground td seelct,
+.rsa-form input[type=submit] {
+	width: auto!important;
+}
+
+/* ----------------------------- general interface styles ------------------------------ */
+input, select, textarea
+{
+	background: #fff;
+	border: 1px solid #999; 
+	color: #555;
+}
+
+input, textarea
+{
+	border: 1px solid #c7c6c6;
+	box-shadow: 0 0 6px #e8e8e8;
+    margin: 0 0 5px;
+    padding: 8px;
+
+    -webkit-transition: all 0.1s ease-in-out;
+	-moz-transition:    all 0.1s ease-in-out;
+	-ms-transition:     all 0.1s ease-in-out;
+	-o-transition:      all 0.1s ease-in-out;
+	transition:         all 0.1s ease-in-out;
+}
+
+input:focus,
+textarea:focus {
+	border: 1px solid #8b2adb;
+	outline: none;
+}
+
+input[type=checkbox], input[type=radio]
+{
+	border: none;
+}
+
+input.checkbox, input.radio
+{
+	border: none;
+}
+
+.tabla td input,
+.tabla td select,
+#tblSection_2 td input,
+#tblSection_2 td select{
+	width: 100%;
+}
+
+button, input.button
+{
+	width: auto !important; 
+	margin-right: 0px;
+	margin-left: 0px;
+	border: 1px solid #bfbfbf; 
+	border-right-color: #908d8d; 
+	border-bottom-color: #908d8d; 
+	padding: 1px .5em; 
+	background: #e1e1e1;
+}
+
+button:active, input.button:active
+{
+	border: 1px solid #908d8d; 
+	border-right-color: #afafaf; 
+	border-bottom-color: #afafaf;
+}
+
+button:hover, input.button:hover
+{
+	cursor: default;
+}
+
+button[disabled=disabled]
+{
+	border: 1px solid #ccc;
+	background: #eee;
+	color: #b3b3b3;
+}
+
+button[disabled=disabled]:hover
+{
+	cursor: default;
+}
+
+button.disabled, input.button.disabled
+{
+	border: 1px solid #ccc; 
+	background: #eee; 
+	color: #b3b3b3;
+}
+
+button.disabled:hover, input.button.disabled:hover
+{
+	cursor: default;
+}
+
+input:-webkit-autofill, 
+textarea:-webkit-autofill, 
+select:-webkit-autofill {
+    background-color: #fff !important;
+    background-image: none !important;
+    color: #555 !important;
+}
+
+/* Display outline on focus */
+:focus {
+	outline: 0;
+}
+
+
+.subtleBackground.login-form {
+    border: 7px double #e6e6e6!important;
+    margin-top: 26px;
+}
+
+.login-form input {
+	padding: 15px;
+    width: 100%;
+}
+
+.login-form input[name=login],
+input.login,
+table#tblSection_2 input[name=add],
+table#tblSection_3 input[name=add],
+#boton {
+	background: #eb2a34;
+	border: 2px solid #eb2a34;
+	color: #fff;
+	cursor: pointer;
+	text-transform: uppercase;
+    padding: 15px 20px;
+    letter-spacing: 4px;
+}
+
+.login-form input[name=login]:hover,
+table#tblSection_2 input[name=add]:hover,
+table#tblSection_3 input[name=add]:hover,
+#boton:hover,
+input.login:hover {
+	background: #fff;
+	color: #555;
+}
+
+table#tblSection_2 input[name=add],
+table#tblSection_3 input[name=add] { 
+	padding: 7px 14px;
+}
+
+table#tblFooter a,
+#tblHeader a {
+    font-size: 13px;
+    color: #000; /*#b3b3b3;*/
+    font-weight: 800;
+}
+
+table#tblFooter a:hover,
+#tblHeader a:hover {
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+tr.tabla td {
+    font-size: 12px;
+    padding: 6px 15px;
+    vertical-align: middle;
+    border-bottom: 2px solid #e6e6e6;
+    word-break: break-word;
+    letter-spacing: -0.3px;
+}
+
+tr.tabla:nth-child(odd) td {
+    background: #fff;
+}
+
+table#tblSection_2 table td,
+#tblSection_3 table td,
+.rh-table1 td {
+    font-size: 12px;
+    vertical-align: top;
+}
+
+#tblSection_3 select,
+.listBackground select,
+fieldset select,
+.rsa-form select,
+select[name="add_months"] {
+	padding: 7px 0 8px 5px;
+    line-height: 1;
+    border: 1px solid #c7c6c6;
+    box-shadow: 0 0 6px #e8e8e8;
+}
+
+.bottom-counter td {
+	background: #fff;
+	padding: 10px; 
+}
+
+.pagingBackground table td {
+	vertical-align: middle!important;
+}
+
+.subtleBackground fieldset {
+	border: 1px solid #d2d1d1;
+    padding: 35px 50px 40px;
+}
+
+fieldset select,
+fieldset input {
+	margin-top: 6px;
+	padding: 15px;
+	width: 100%;
+}
+
+fieldset #boton{
+	display: inline-block;
+	margin-top: 20px;
+	text-decoration: none;
+}
+
+legend {
+	padding: 15px;
+}
+
+#confirm-message {
+	display: none;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    height: 100%;
+    top: 0;
+    color: #fff;
+    z-index: 99;
+    opacity: 1;
+}
+
+#confirm-message:before {
+    content: "";
+    display: block;
+    background: rgba(39, 36, 36, 0.84);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.message {
+    background: #ffffff;
+    max-width: 540px;
+    margin: 0 auto;
+    display: block;
+    opacity: 1;
+    z-index: 100;
+    position: relative;
+    top: 30%;
+    padding: 40px;
+    color: #121312;
+    border: 5px solid #252525;
+    font-size: 40px;
+}
+
+.message .button {
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin: 23px 5px 5px;
+    background: #75c70e;
+    border: 1px solid #75c70e;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.message .button.danger {
+    background: #f00;
+    border: 1px solid #f00;
+}
+
+.message .button:hover {
+	background: #000;
+	border: 1px solid #000;
+	cursor: pointer;
+}

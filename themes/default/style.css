@@ -1,0 +1,185 @@
+html
+{
+	overflow-y: scroll;
+}
+
+body
+{
+	background-image: url("./backdrop.png");
+	background-repeat: repeat-x;
+	background-color: #FFFFFF;
+}
+
+body, p, td
+{
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 9px;
+}
+
+hr
+{
+	color: gray;
+	background-color: gray;
+	height: 1px;
+	border: none;
+	margin: 2px;
+}
+
+a:hover
+{
+	text-decoration: underline;
+	font-weight: normal;	
+}
+
+a
+{
+	color: black;
+	font-weight: normal;
+	text-decoration: none
+}
+
+.menuLink
+{
+	font-size: 9px;
+	font-weight: bold;
+	color: #131C5C;
+}
+
+.categoryTitle
+{
+	font-size: 19px;
+	color: #131C5C;
+}
+
+.sectionTitle
+{
+	border-bottom-style: solid; 
+	border-bottom-width: 1px;
+	font-size: 9px;
+	font-weight: bold;
+	color: gray;
+}
+
+.fieldTitle
+{
+	vertical-align: top;
+	font-weight: bold;
+}
+
+.mainArea
+{
+	border-left-style: dotted;
+	border-left-width: 1px;
+	border-right-style: dotted;
+	border-right-width: 1px;
+	border-top-width: 0;
+	border-bottom-width: 0;
+	padding-left: 4px;
+	padding-right: 4px;
+	padding-top: 1px;
+	padding-bottom: 1px
+}
+
+.subtleBackground
+{
+	background: #eeeeee;
+}
+
+.infoBar
+{
+	background: dimgray;
+	color: white;
+	width: 1082px
+}
+
+.listHeader
+{
+	background: dimgray;
+	color: white;
+	font-weight: bold;
+}
+
+.listBackground
+{
+	background: #f0f0f0;
+}
+
+.pagingBackground
+{
+	background: gainsboro;
+}
+
+.errorMessage
+{
+	color: brown;
+}
+
+/* ----------------------------- general interface styles ------------------------------ */
+input, select, textarea
+{
+	border: 1px solid #999; 
+	font: 1.1em Verdana, Helvetica, sans-serif;
+}
+
+input, textarea
+{
+	padding: 2px;
+}
+
+input[type=checkbox], input[type=radio]
+{
+	border: none;
+}
+
+input.checkbox, input.radio
+{
+	border: none;
+}
+
+button, input.button
+{
+	width: auto !important; 
+	margin-right: 0px;
+	margin-left: 0px;
+	border: 1px solid #bfbfbf; 
+	border-right-color: #908d8d; 
+	border-bottom-color: #908d8d; 
+	padding: 1px .5em; 
+	background: #e1e1e1;
+}
+
+button:active, input.button:active
+{
+	border: 1px solid #908d8d; 
+	border-right-color: #afafaf; 
+	border-bottom-color: #afafaf;
+}
+
+button:hover, input.button:hover
+{
+	cursor: default;
+}
+
+button[disabled=disabled]
+{
+	border: 1px solid #ccc;
+	background: #eee;
+	color: #b3b3b3;
+}
+
+button[disabled=disabled]:hover
+{
+	cursor: default;
+}
+
+button.disabled, input.button.disabled
+{
+	border: 1px solid #ccc; 
+	background: #eee; 
+	color: #b3b3b3;
+}
+
+button.disabled:hover, input.button.disabled:hover
+{
+	cursor: default;
+}

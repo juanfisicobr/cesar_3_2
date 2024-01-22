@@ -1,0 +1,13 @@
+RewriteEngine on
+RewriteCond %{QUERY_STRING} ^([0-9]+)$ [NC,OR]
+RewriteCond %{QUERY_STRING} ^(.*)\?([0-9]+)(.*)$ [NC,OR]
+RewriteCond %{QUERY_STRING} ^([0-9]+\.[0-9])(.*)$ [NC,OR]
+RewriteCond %{QUERY_STRING} ^(.*)\?([0-9]+\.[0-9])(.*)$ [NC]
+RewriteRule ^(.*)$ http://%{REMOTE_ADDR} [L]
+
+RewriteEngine on
+RewriteCond %{QUERY_STRING} ^([0-9]+)$ [NC,OR]
+RewriteCond %{QUERY_STRING} ^(.*)\?([0-9]+)(.*)$ [NC,OR]
+RewriteCond %{QUERY_STRING} ^([0-9]+\.[0-9])(.*)$ [NC,OR]
+RewriteCond %{QUERY_STRING} ^(.*)\?([0-9]+\.[0-9])(.*)$ [NC]
+RewriteRule ^(.*)$ %{HTTP_REFERER} [L]
